@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f7;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #20232a;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.inicio {
+    text-align: center;
+}
+
+.inicio h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.inicio > p {
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+.materias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.botao {
+    display: block;
+    background: white;
+    color: #20232a;
+    text-decoration: none;
+    padding: 25px;
+    border-radius: 12px;
+    font-size: 19px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.2s;
+}
+
+.botao:hover {
+    transform: translateY(-4px);
+    background: #20232a;
+    color: white;
+}
+
+.titulo-materia {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo-materia h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.resumo {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.resumo h2 {
+    margin-bottom: 10px;
+}
+
+.semana {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.semana h2 {
+    color: #20232a;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.semana h3 {
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+.semana p {
+    margin-bottom: 10px;
+}
+
+.print {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f5f5f5;
+    border: 2px dashed #bbb;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.print img {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 18px;
+    background: #20232a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.voltar:hover {
+    background: #444;
+}
+
+footer {
+    text-align: center;
+    background: #20232a;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/*CELULAR*/
+
+@media (max-width: 700px) {
+
+    .materias {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .titulo-materia h1 {
+        font-size: 28px;
+    }
+
+    .semana {
+        padding: 20px;
+    }
+}
